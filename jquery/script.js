@@ -18,14 +18,14 @@ $(document).ready(function(){
        && checkIfInt(monthTo)
        && checkIfInt(yearTo))
        {
-            if(checkIfDayIsValid(dayFrom, errorDiv)
-            && checkIfDayIsValid(dayTo, errorDiv)
-            && checkIfMonthIsValid(monthFrom, errorDiv)
-            && checkIfMonthIsValid(monthTo, errorDiv)
-            && checkIfMonthHasEnoughDays(dayFrom, monthFrom, errorDiv)
-            && checkIfMonthHasEnoughDays(dayTo, monthTo, errorDiv)
-            && checkIfYearIsValid(yearFrom, errorDiv)
-            && checkIfYearIsValid(yearTo, errorDiv))
+            if(checkIfDayIsValid(dayFrom)
+            && checkIfDayIsValid(dayTo)
+            && checkIfMonthIsValid(monthFrom)
+            && checkIfMonthIsValid(monthTo)
+            && checkIfMonthHasEnoughDays(dayFrom, monthFrom)
+            && checkIfMonthHasEnoughDays(dayTo, monthTo)
+            && checkIfYearIsValid(yearFrom)
+            && checkIfYearIsValid(yearTo))
             {
                 errorDiv.text("Sve je u redu.");
             } else {
@@ -47,7 +47,7 @@ function checkIfInt(value){
     }
 }
     //checking if value of day is between 1 and 31, return bool
-function checkIfDayIsValid(value, err){
+function checkIfDayIsValid(value){
     if(value < 1 || value > 31){
         alert('Dan mora da bude izmedju 1 i 31.');
         return false;
@@ -56,7 +56,7 @@ function checkIfDayIsValid(value, err){
     }
 }
     //checking if value of month is between 1 and 12, return bool
- function checkIfMonthIsValid(value, err){
+ function checkIfMonthIsValid(value){
     if(value < 1 || value > 12){
         alert('Meseci ima samo 12.');
         return false;
@@ -65,7 +65,7 @@ function checkIfDayIsValid(value, err){
     }
 }
     //checking if value of year is between 1930 and 2018, return bool
- function checkIfYearIsValid(value, err){
+ function checkIfYearIsValid(value){
     if(value < 1930 || value > 2018){
         alert('Godina mora biti izmedju 1930 i 2018.');
         return false;
@@ -74,7 +74,7 @@ function checkIfDayIsValid(value, err){
     }
 }
     //checking if input of day and month match, return bool
-function checkIfMonthHasEnoughDays(day, month, err){
+function checkIfMonthHasEnoughDays(day, month){
     if( month == 4 ||
         month == 6 ||
         month == 9 ||
