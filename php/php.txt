@@ -1,0 +1,4 @@
+3. a) Napisati PHP skriptu koja ispisuje trenutno vreme (sunčano, kišovito, oblačno...) za Novi Sad,
+korišćenjem openweather API-ja
+b1) U browseru prikaz trenutnog vremena treba da se refresh-uje ajaxom na svakih 10 sec.
+b2) Pripremiti skriptu tkoa da može biti upotrebljena na sajtu sa velikom posetom

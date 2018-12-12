@@ -1,0 +1,3 @@
+1. Koristeći Bootstrap 4 napisati HTML/CSS za prikaz slike 100x100px,
+proizvoljno dugačkog teksta desno od slike i još jednog proizvoljno dugačkog teksta desno od prethodnog.
+Na rezolucijama za mobilne uređaje desni pasus treba da padne ispod ostalih elemenata.

@@ -1,0 +1,2 @@
+2. Pod pretpostavkom da imamo dva seta od po tri tekstualna input polja (dan, mesec, godina) - "od" i "do", napisati jQuery skriptu
+koja proverava validnost unetih datuma.
